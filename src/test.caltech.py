@@ -13,7 +13,7 @@ testset_path = '../data/caltech/test.pickle'
 label_dict_path = '../data/caltech/label_dict.pickle'
 
 weight_path = '../data/caffe_layers_value.pickle'
-model_path = '../models/caltech256/model-4'
+model_path = '../models/caltech256/model-6'
 
 batch_size = 1
 

@@ -1,6 +1,7 @@
 data/
 models/
 
+results/*.jpg
 *pyc
 *.DS_Store
 
