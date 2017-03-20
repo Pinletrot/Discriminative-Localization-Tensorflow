@@ -35,16 +35,16 @@ if not os.path.exists(trainset_path):
   label_dict -= 1
   n_labels = len(label_dict)
 
-  image_paths_per_label = map(
-      lambda one_dir: map(
+  image_paths_per_label = list(map(
+      lambda one_dir: list(map(
           lambda one_file: os.path.join(
               dataset_path, one_dir, one_file),
-          os.listdir(os.path.join(dataset_path, one_dir))),
-      image_dir_list)
+          os.listdir(os.path.join(dataset_path, one_dir)))),
+      image_dir_list))
   image_paths_train = np.hstack(
-      map(lambda one_class: one_class[:-10], image_paths_per_label))
+      list(map(lambda one_class: one_class[:-10], image_paths_per_label)))
   image_paths_test = np.hstack(
-      map(lambda one_class: one_class[-10:], image_paths_per_label))
+      list(map(lambda one_class: one_class[-10:], image_paths_per_label)))
 
   trainset = pd.DataFrame({'image_path': image_paths_train})
   testset = pd.DataFrame({'image_path': image_paths_test})
