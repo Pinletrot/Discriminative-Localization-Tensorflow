@@ -1,7 +1,4 @@
-data/
-models/
+.idea/
 
-results/*.jpg
-*pyc
+*.pyc
 *.DS_Store
-
