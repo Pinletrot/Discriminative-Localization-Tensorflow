@@ -1,4 +1,4 @@
-# Weakly_detector
+# Discriminative Localization Tensorflow
 
 Tensorflow implementation of paper:
 
@@ -8,5 +8,7 @@ Computer Vision and Pattern Recognition (CVPR), 2016.
 [[PDF](http://arxiv.org/pdf/1512.04150.pdf)][[Project Page](http://cnnlocalization.csail.mit.edu/)]
 
 
-## Installation
-TBD.
+## Demo
+
+Check *mnist-example.ipynb*.
+
